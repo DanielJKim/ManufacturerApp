@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.mainPageController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="500.0" prefWidth="700.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="700.0">
+               <children>
+                  <Button fx:id="logoutButton" layoutX="603.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutAction" onMouseClicked="#logoutAction" text="Logout" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="loginButton" layoutX="315.0" layoutY="400.0" mnemonicParsing="false" onAction="#displayLoginPage" onMouseClicked="#displayLoginPage" text="Login">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="submitButton" layoutX="262.0" layoutY="300.0" mnemonicParsing="false" onAction="#submitAction" onMouseClicked="#submitAction" text="Submit Application" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewSubmittedButton" layoutX="223.0" layoutY="350.0" mnemonicParsing="false" onAction="#displaySubmittedApplications" onMouseClicked="#displaySubmittedApplications" text="View Submitted Applications" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="imageView" fitHeight="225.0" fitWidth="450.0" layoutX="241.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="220.0" AnchorPane.topAnchor="53.0">
+                     <image>
+                        <Image url="@images/vol3-401-Sir-Isaac-Newton-q75-1002x103518-04-2017-19-30-56.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</GridPane>
